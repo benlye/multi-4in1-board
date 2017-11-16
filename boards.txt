@@ -1,0 +1,40 @@
+# See: https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5---3rd-party-Hardware-specification
+# See: http://code.google.com/p/arduino/wiki/Platforms
+
+##############################################################
+
+menu.cpu=Processor
+
+##############################################################
+## Multi 4-in-1 (3.3V, 16 MHz) w/ ATmega328
+## --------------------------------------------------
+multi.name=Multi 4-in-1
+
+multi.upload.tool=avrdude
+multi.upload.protocol=arduino
+multi.upload.speed=57600
+multi.upload.maximum_data_size=2048
+
+multi.build.mcu=atmega328p
+multi.build.f_cpu=16000000L
+multi.build.board=AVR_PRO
+multi.build.core=arduino
+multi.build.variant=eightanaloginputs
+multi.build.extra_flags=-Wl,--relax
+
+multi.bootloader.low_fuses=0xFF
+multi.bootloader.high_fuses=0xD6
+multi.bootloader.extended_fuses=0xD6
+multi.bootloader.unlock_bits=0x3F
+multi.bootloader.lock_bits=0x0F
+multi.bootloader.tool=avrdude
+
+multi.menu.cpu.with_bootloader=ATmega328 (3.3V, 16MHz, with bootloader)
+multi.menu.cpu.with_bootloader.upload.maximum_size=32512
+multi.menu.cpu.with_bootloader.bootloader.file=atmega/optiboot_atmega328_16.hex
+
+multi.menu.cpu.without_bootloader=ATmega328 (3.3V, 16MHz, without bootloader)
+multi.menu.cpu.without_bootloader.upload.maximum_size=32768
+multi.menu.cpu.without_bootloader.bootloader.file=atmega/optiboot_atmega328_168.hex
+
+##############################################################   
