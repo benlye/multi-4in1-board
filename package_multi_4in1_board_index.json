@@ -1,29 +1,28 @@
 {
   "packages": [
     {
-      "name": "Anet",
-      "maintainer": "Hans Raaf",
-      "websiteURL": "https://github.com/SkyNet3D/anet-board",
-      "email": "hans@raaf.net",
+      "name": "Multi 4-in-1",
+      "maintainer": "Ben Lye",
+      "websiteURL": "https://github.com/benlye/multi-4in1-board",
+      "email": "ben@lye.co.nz",
       "help": {
-        "online": "https://github.com/SkyNet3D/anet-board"
+        "online": "https://github.com/benlye/multi-4in1-board"
       },
       "platforms": [
         {
-          "name": "Anet 3D Printer Boards",
+          "name": "Multi 4-in-1 Boards",
           "architecture": "avr",
           "version": "1.0",
           "category": "Contributed",
           "help": {
-            "online": "https://github.com/SkyNet3D/anet-board"
+            "online": "https://github.com/benlye/multi-4in1-board"
           },
-          "url": "https://github.com/benlye/anet-board/archive/1.0.1.zip",
-          "archiveFileName": "1.0.1.zip",
-          "checksum": "SHA-256:eb468d4157eac5ad5d18941b2f7f54d32c77b855a7f22520b7346845f286afa6",
-          "size": "43269",
+          "url": "https://github.com/benlye/multi-4in1-board/archive/v1.0.0.zip",
+          "archiveFileName": "v1.0.0.zip",
+          "checksum": "SHA-256:0e14a8cea6039cc3da839a8952fa88c5f59517b64c3409e5bb9f4c8ed22482a0",
+          "size": "25038",
           "boards": [
-            {"name": "Anet V1.0"},
-            {"name": "Anet V1.0 (Optiboot)"}
+            {"name": "Multi 4-in-1 (Atmega328p, 3.3V, 16MHz)"}
           ],
           "toolsDependencies": []
         }
