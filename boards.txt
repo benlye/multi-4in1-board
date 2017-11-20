@@ -24,16 +24,17 @@ multiatmega328p.build.extra_flags=-Wl,--relax
 
 multiatmega328p.bootloader.tool=arduino:avrdude
 multiatmega328p.bootloader.low_fuses=0xFF
-multiatmega328p.bootloader.high_fuses=0xD6
-multiatmega328p.bootloader.extended_fuses=0xD6
+multiatmega328p.bootloader.extended_fuses=0xFD
 multiatmega328p.bootloader.unlock_bits=0x3F
 multiatmega328p.bootloader.lock_bits=0x0F
 
 multiatmega328p.menu.bootloader.none=No bootloader
+multiatmega328p.menu.bootloader.none.bootloader.high_fuses=0xD6
 multiatmega328p.menu.bootloader.none.upload.maximum_size=32768
-multiatmega328p.menu.bootloader.optiboot.bootloader.file=atmega/empty.hex
+multiatmega328p.menu.bootloader.none.bootloader.file=atmega/empty.hex
 
 multiatmega328p.menu.bootloader.optiboot=Optiboot with Boot Delay
+multiatmega328p.menu.bootloader.optiboot.bootloader.high_fuses=0xD7
 multiatmega328p.menu.bootloader.optiboot.upload.maximum_size=32512
 multiatmega328p.menu.bootloader.optiboot.bootloader.file=atmega/optiboot_atmega328_16.hex
 
